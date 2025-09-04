@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Título -->
+  <title>CUMPLE XV - MORA - 3/10/2025</title>
+  <!-- Favicon-->
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="figuras/favicon.png" type="image/x-icon">
+  <!-- Open Graph / Facebook / WhatsApp -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://invitationcard1.github.io/MoraQuince/" />
+  <meta property="og:title" content="CUMPLE XV - MORA - 3/10/2025" />
+  <meta property="og:description" content="¡Acompañanos a celebrar mis 15 años! 🎉" />
+  <meta property="og:image" content="https://invitationcard1.github.io/MoraQuince/Card.jpg" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://invitationcard1.github.io/MoraQuince/" />
+  <meta name="twitter:title" content="CUMPLE XV - MORA - 3/10/2025" />
+  <meta name="twitter:description" content="¡Acompañanos a celebrar mis 15 años! 🎉" />
+  <meta name="twitter:image" content="https://invitationcard1.github.io/MoraQuince/Card.jpg" />
+
+
+  <!-- Estilos y fuentes -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css"
+    integrity="sha384-7ynz3n3tAGNUYFZD3cWe5PDcE36xj85vyFkawcF6tIwxvIecqKvfwLiaFdizhPpN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+  <header class="parallax" id="parallax">
+    <div class="frenteflores">
+
+    </div>
+  </header>
+  <h2 class="titulocontador">FALTAN:</h2>
+  <div class="contador">
+
+    <div class="bloque">
+      <div id="dias" class="numero"></div>
+      <div class="etiqueta">Días</div>
+    </div>
+
+    <div class="bloque">
+      <div id="horas" class="numero"></div>
+      <div class="etiqueta">horas</div>
+    </div>
+
+    <div class="bloque">
+      <div id="minutos" class="numero"></div>
+      <div class="etiqueta">minutos</div>
+    </div>
+
+    <div class="bloque">
+      <div id="segundos" class="numero"></div>
+      <div class="etiqueta">segundos</div>
+    </div>
+  </div>
+  <div class="content">
+    <div class="ubicacion">
+      <div class="ubicacion-bloque">
+        <img data-aos="fade-up" class="icon" src="./img/copas.svg" alt="fiesta">
+        <h2 data-aos="fade-up">FIESTA</h2>
+        <p>
+          Te esperamos el Viernes 3 de octubre a las 21:30 hs
+          <br>
+          Cardellino Eventos – Av. Dardo Rocha 2045
+        </p>
+        <br>
+        <a data-aos="fade-up" target="_blank" class="boton" href="https://maps.app.goo.gl/SDfjV1roK6tsfzEA7">CÓMO
+          LLEGAR</a>
+      </div>
+    </div>
+    <div class="dresscode">
+      <img data-aos="fade-up" class="icon" src="./figuras/monno.png" alt="fiesta">
+      <h2 data-aos="fade-up">DRESS CODE - ELEGANTE SPORT</h2>
+      <p data-aos="fade-up">
+        Vestite como más te guste, lo importante es que la pasemos genial!
+    </div>
+    <div class="ubicacion">
+      <br>
+      <div class="ubicacion-bloque">
+        <img data-aos="fade-up" class="icon" src="./img/instagram.svg" alt="instagram">
+        <h2 data-aos="fade-up">INSTAGRAM</h2>
+        <p data-aos="fade-up">¡Queremos revivir cada momento! 📸✨
+          Subí tus fotos y videos del quince y recordá etiquetarnos para verlos todos.</p>
+      </div>
+      <br>
+    </div>
+    <div class="caja">
+      <div class="ubicacion-bloque dos">
+        <img data-aos="fade-up" class="icon" src="./img/giftcard.svg" alt="giftcard">
+        <h2 data-aos="fade-up">MESA DE REGALOS</h2>
+        <p data-aos="fade-up">
+          Si deseás regalarme algo podés colaborar con mis sueños y anhelos ✨¡Muchas gracias!
+        </p>
+
+        <br>
+        <a data-aos="fade-up" class="boton" onclick="copyToClipboard('mora.0110')">ALIAS</a> <br>
+        <br>
+        <p data-aos="fade-up">Hace clic para copiar los datos de nuestra cuenta.
+          <br> Titular: Mora Guillermina Carrasco Lopiano
+        </p>
+      </div>
+    </div>
+    <div class="ubicacion-bloque tres">
+      <img data-aos="fade-up" class="icon" src="./figuras/asistencia.png" alt="asistencia">
+      <h2 data-aos="fade-up">RSVP</h2>
+      <p data-aos="fade-up">Por favor, no olvides confirmar tu asistencia
+      </p>
+      <div class="rsvpbotones">
+        <a data-aos="fade-in" class="boton" target="_blank" href="">CONFIRMAR</a>
+      </div>
+    </div>
+  </div>
+  <footer></footer>
+  <script>
+    const parallax = document.getElementById("parallax");
+
+    window.addEventListener("scroll", () => {
+      const scrollY = window.scrollY;
+      parallax.style.backgroundPositionY = `${scrollY * 0.5}px`; /* Ajusta la velocidad con 0.5 */
+    });
+  </script>
+  <script>
+    document.addEventListener("scroll", function () {
+      let scrollPos = window.scrollY;
+      let parallax = document.getElementById("parallax");
+
+      if (parallax) {
+        parallax.style.backgroundPositionY = (scrollPos * 0.5) + "px";
+      }
+    });
+  </script>
+  <script>
+
+    function copyToClipboard(text) {
+      const tempInput = document.createElement("input");
+      document.body.appendChild(tempInput);
+      tempInput.value = text;
+      tempInput.select();
+      document.execCommand("copy");
+      document.body.removeChild(tempInput);
+      alert(`Copiaste los datos de cuenta "${text}" a tu portapapeles`);
+    }
+  </script>
+  <script src="reproductor.js"></script>
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
